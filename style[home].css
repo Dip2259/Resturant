@@ -1,0 +1,152 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+}
+.navbar{
+    background-color: aqua;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav{
+    width: 15vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-right: 34px;
+}
+.content{
+    margin: 5px 0px;
+    padding: 5px 10px;
+    font-size: 1.2rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.content:hover{
+    background-color: bisque;
+    border-radius: 8px;
+}
+.welcome{
+    /* border: 2px solid red; */
+    width: 50vw;
+    margin: 25px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+.welcomePara{
+    margin: 15px 3px;
+    font-size: 1.1rem;
+    font-family: sans-serif;
+}
+#catelogHeading{
+    /* width: 50vw;
+    margin: auto; */
+    margin: 5vh;
+    text-align: center;
+}
+.foodCatelog{
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.food{
+    background-color: antiquewhite;
+    box-shadow: 5px 5px 5px 0.1px rgb(114, 112, 112);
+    border-radius: 10px;
+    display: flex;
+    padding: 10px;
+    flex-direction: column;
+    position: relative;
+    height: 23vh;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid blue; */
+}
+.food:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+}
+.foodName{
+    font-size: 1.3rem;
+    font-family: cursive;
+    margin: 5px 0px;
+}
+.foodName::selection, .foodPrice::selection{
+    display: none;
+}
+.foodImage{
+    border-radius: 5px;
+    width: 120px;
+}
+.selected{
+    /* border: 1.9px solid rgb(1, 167, 1); */
+    transform: scale(1.2);
+}
+.tick{
+    display: none;
+    position: absolute;
+    width: 52px;
+    top: -18px;
+    left: -24px;
+}
+.view{
+    display: block;
+}
+.buttons{
+    /* border: 2px solid red; */
+    display: flex;
+    width: 30vw;
+    justify-content: space-evenly;
+    align-items: center;
+    margin:20vh auto;
+}
+.orderNow, .orders,.submit{
+    font-size: 1.1rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgb(221, 110, 6);
+    border-radius: 10px;
+    padding: 8.5px;
+    cursor: pointer;
+}
+.orderNow,.submit{
+    border: 1.3px solid rgb(63, 61, 61);
+}
+.orders{
+    display: none;
+    background-color: cornsilk;
+    color: rgb(59, 199, 59);
+    border: 1.3px solid rgb(63, 61, 61);
+}
+.tableNo{
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    padding: 12px;
+    align-items: center;
+    height: 10vh;
+    border: 2px solid red;
+    border-radius: 10px;
+    position: absolute;
+    top: 70vh;
+    left: 37.5vw;
+    background-color: aqua;
+}
+.tableNoinput{
+    margin: 1.3vh 0;
+    margin-right: 10vw;
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 1.5px solid rgb(26, 97, 26);
+}
+.submit{
+    padding: 2.5px 5px;
+    position: relative;
+    left: -141px;
+    bottom: 1px;
+}
